@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- for Resposive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrab Library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwsome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <a id="to_Top" href="#" role="button" class="btn  p-2  fw-bold"><i class="fas fa-angle-up"></i></a>
+    <div class="home position-relative py-5">
+    <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <div class="Products_store">
+                        <header id="head">
+                            <i class="fab fa-cuttlefish me-2"></i>
+                            <i class="far fa-registered me-2"></i>
+                            <i class="fab fa-uniregistry me-2"></i>
+                            <i class="fab fa-dyalog"></i>
+                        </header>
+                        <div id="ContactUs" class="my-5 p-3">
+                            <form id="form">
+                                <div class="mb-3 ">
+                                    <label class="fw-bold" for="productName">Product Name <span>*</span></label>
+                                    <input class="form-control my-2 rounded-0 " type="text" id="productName" placeholder="Samsung">
+                                    <p id="alertName" class="text-light d-none">
+                                        Product Name is Rrequired " Product Name Must be Start by Capital character".
+                                    </p>
+                                </div>
+    
+                                <div class="mb-3 ">
+                                    <label class="fw-bold" for="productPrice">Product Price <span>*</span></label>
+                                    <input class="form-control my-2 rounded-0" type="number" id="productPrice" placeholder="2000">
+                                    <p id="alertPrice" class="text-light d-none">
+                                        Price is Required " Price Range from [1000 to 30000] ".
+                                    </p>
+                                </div>
+            
+                                <div class="mb-3 ">
+                                    <label  class="fw-bold" for="productCategory">Product Category <span>*</span></label>
+                                    <input class="form-control my-2 rounded-0" type="text" id="productCategory" placeholder="Tablet">
+                                    <p id="alertCategory" class="text-light d-none">
+                                        Product Category is Required " Content only [Labtop - Mobile - Screen - Tablet]".
+                                    </p>
+                                    
+                                </div>
+            
+                                <div class="mb-3">
+                                    <label  class="fw-bold" for="productDesc">Product Desc <span>*</span></label>
+                                    <textarea class="form-control my-2 rounded-0" type="text" id="productDesc"></textarea>
+                                    <p id="alertDesc" class="text-light d-none">
+                                        Message is Required.
+                                    </p>
+                                </div>
+    
+                                <button id="btn" type="submit" class="btn btn-dark mx-auto text-white d-block fw-bold " disabled>Add Product</button>
+                            </form>
+                        </div>
+    
+                        <section class="crud_table p-3 overflow-hidden">
+                            <div class="search position-relative">
+                                <input id="search" type="text" class="form-control rounded-0 ps-5" placeholder="Search For Products...">
+                                <i class="fas fa-search"></i>
+                            </div>
+        
+                            <table class="table table-responsive   table-striped  table-hover mt-3">
+                                <thead class="table-dark">
+                                    <th>Index</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Category</th>
+                                    <th>Description</th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <tbody id="tablebody"></tbody>
+                            </table>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- JQuery Library -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Main js File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+.home{
+    background-image: url(../img/Home.jpg);
+    background-size: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #fff;
+}
+#ContactUs , .crud_table{
+    color: #fff;
+    background-color: rgba(192, 194, 195, 0.21);
+    /* border: solid 1px #e8e8e8; */
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+}
+.fa-search{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(179, 176, 176);
+}
+span{
+    color: red ;
+}
+button.btn{
+    background-color: #212529 !important;
+    box-shadow: none !important;
+}
+button.btn:hover{
+    background-color: #212529b8 !important;
+}
+.form-control::placeholder{
+    color: rgb(189, 181, 181);
+}
+textarea
+{
+    resize: none;
+}
+i{
+    cursor: pointer;
+}
+#to_Top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999999999999999;
+    background-color: #eee;
+    color: #000;
+    border: none !important;
+    box-shadow: none !important;
+}
+#to_Top:hover{
+    background-color: #ccc;
+}
+
+
